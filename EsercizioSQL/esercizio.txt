@@ -1,0 +1,48 @@
+Prodotti 
+
+SELECT *
+  FROM [dbo].[Products]
+  where UnitsInStock > 40
+
+
+
+Employee
+
+SELECT *
+  FROM [dbo].[Employees]
+  where City = 'London'
+
+
+
+Ordini
+SELECT *
+  FROM [dbo].[Orders]
+  where Freight between 90 and 200
+  order by Freight desc
+
+
+Prodotti
+
+SELECT *
+  FROM [dbo].[Products]
+  where CategoryID = 1
+
+
+Dettagli degli ordini
+
+
+SELECT *
+  FROM [dbo].[Order Details]
+  where Discount <> 0
+
+
+
+Ordine CLienti
+
+
+SELECT *
+  FROM [dbo].[Orders]
+  where CustomerID = 'BOTTM'and Freight > 50
+
+
+
